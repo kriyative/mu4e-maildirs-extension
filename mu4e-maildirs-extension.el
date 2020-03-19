@@ -734,7 +734,8 @@ clicked."
            (t
             (setq mu4e-maildirs-extension-start-point (make-marker))
             (set-marker mu4e-maildirs-extension-start-point
-                        (search-backward mu4e-maildirs-extension-insert-before-str))
+                        (or (search-backward mu4e-maildirs-extension-insert-before-str nil t)
+                            (point-min)))
             (set-marker-insertion-type mu4e-maildirs-extension-start-point nil)))
 
      ;; persistent end-point mark
