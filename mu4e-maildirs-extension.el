@@ -292,7 +292,7 @@ If set to `nil' it won't be displayed."
 
 (defvar mu4e-maildirs-extension-bookmarks nil)
 
-(defvar mu4e-maildirs-extension-buffer-name mu4e~main-buffer-name)
+(defvar mu4e-maildirs-extension-buffer-name mu4e-main-buffer-name)
 
 (defvar mu4e-maildirs-extension-index-updated-func
   'mu4e-maildirs-extension-index-updated-handler)
